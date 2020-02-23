@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <h1>Weather App</h1>
+
+    <div>
+            <form class="weather_app">
+                <label for="des">Enter city name: </label>
+                </br>
+                <input type="text" name="city_search">
+            </form>
+        </br>
+            <div class="weather_info_div">
+                <img src="https://via.placeholder.com/150" alt="weather_mage" class="weather_icon">
+                <p class="weather_city_name">City Name</p>
+                <p class="weather_cond">Weather Condition</p>
+                <p class="weather_temp">Temperature</p>
+            </div>
+    </div>
+    <!--
+        The weather.js should come before app.js 
+        because app.js will be using function in weather.js
+    -->
+    <script src="weather.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html> 
