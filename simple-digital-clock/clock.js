@@ -2,24 +2,12 @@ const clock = document.querySelector('.clock');
 
 const tick = () => {
     const now = new Date();
-
-    const h = now.getHours();
-    if (h < 10) {
-        h = '0' + h
-    }
-    let m = now.getMinutes();
-    if (m < 10) {
-        m = '0' + m
-    }
-    let s = now.getSeconds();
-    if (s < 10) {
-        s = '0' + s
-    }
-
+    let dateStr = now.toLocaleDateString();
+    let timeStr = now.toLocaleTimeString();
+    
     const timeValue = `
-    <span>${h}</span> : 
-    <span>${m}</span> :
-    <span>${s}</span>
+    <span>${dateStr}</span> </t>
+    <span>${timeStr}</span>
     `;
 
     clock.innerHTML = timeValue;
