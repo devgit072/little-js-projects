@@ -7,7 +7,7 @@ const getCityDetails = async (cityName) => {
 
     const response = await fetch(api);
     const responseData = await response.json();
-
+    
     // console.log(responseData);
     return responseData[0];
 
